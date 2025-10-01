@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Financiamento - Viana Consultoria</title>
+    <link rel="stylesheet" href="css/style_viana.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo_viana.png" alt="Logo Viana Consultoria">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index_viana.html">Início</a></li>
+                    <li><a href="quem-somos_viana.html">Quem Somos</a></li>
+                    <li><a href="servicos_viana.html">Serviços</a></li>
+                    <li><a href="tecnologia_viana.html">Tecnologia</a></li>
+                    <li><a href="clientes_viana.html">Clientes</a></li>
+                    <li><a href="contato_viana.html">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="simulacao.html" class="btn-cta">Simule um Financiamento</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Simulação Inteligente: Descubra o Viana Score</h1>
+                <p>Nossa IA faz a pré-análise de viabilidade do seu projeto. É rápido, seguro e te dá uma nota sobre o potencial de sucesso do seu financiamento.</p>
+            </div>
+        </section>
+
+        <section class="simulation-section">
+            <div class="container">
+                <div class="simulation-form">
+                    <h2>Dados do Projeto</h2>
+                    <form action="#" method="POST" id="viana-score-form">
+                        <div class="form-group">
+                            <label for="value">Valor Desejado (R$)</label>
+                            <input type="number" id="value" name="value" placeholder="Ex: 500000" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sector">Setor de Atuação</label>
+                            <select id="sector" name="sector" required>
+                                <option value="" disabled selected>Selecione seu setor</option>
+                                <option value="agro">Agronegócio</option>
+                                <option value="industria">Indústria e Manufatura</option>
+                                <option value="servicos">Serviços e Comércio</option>
+                                <option required value="outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="faturamento">Aumento de Faturamento Estimado (%)</label>
+                            <input type="number" id="faturamento" name="faturamento" placeholder="Ex: 25% (Aumento esperado após o investimento)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prazo">Prazo (Meses)</label>
+                            <input type="number" id="prazo" name="prazo" placeholder="Ex: 60" required>
+                        </div>
+                        
+                        <button type="submit" class="btn-cta large-submit">Gerar Viana Score</button>
+                    </form>
+                </div>
+
+                <div class="simulation-result">
+                    <h2>Seu Resultado Preliminar</h2>
+                    <div id="score-display">
+                        <p class="score-text">Preencha os dados ao lado para ver sua nota de viabilidade!</p>
+                        <h1 id="score-value">N/A</h1>
+                    </div>
+                    <p class="score-explanation">O Viana Score é uma análise preliminar baseada em inteligência de mercado. Ele indica o quão bem seu projeto se alinha com os critérios de sucesso e retorno de investimento.</p>
+                    <a href="contato_viana.html" class="btn-cta large">Quero Fazer a Análise Completa</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Viana Consultoria. Todos os direitos reservados.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a> | <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/viana_score.js"></script>
+
+</body>
+</html>
